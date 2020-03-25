@@ -6,7 +6,7 @@ function compi(){
         var converter = new showdown.Converter();
         var valuesss=converter.makeHtml(values);
 	
-        $("div.htmlhtml").html(valuesss);
+        $("div.htmlhtml").html(valuesss.replace("<a href=\"", "<a target="_blank" href=\""));
         $("code.htmltext").text(valuesss);
       }
 	  $("textarea").val("");
