@@ -1,0 +1,3 @@
+ div{width: calc(50vw - 30px); height: calc(50vh - 30px); overflow-y: scroll;}div.htmlhtml{border-color:#17ff0f;border-width: 5px;border-style: solid;}
+  textarea{width: calc(50vw - 30px); height: calc(100vh - 30px);resize:none;border-color: #ff0f0f;border-width: 5px;border-style: solid;}div:not(.htmlhtml){border-color:#ff960f;border-width: 5px;border-style: solid;}
+  
