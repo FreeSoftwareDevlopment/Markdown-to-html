@@ -4,25 +4,10 @@
 	<title>SharkMarkdown Compiler</title>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
-  <style>
-  div{width: calc(50vw - 30px); height: calc(50vh - 30px); overflow-y: scroll;}div.htmlhtml{border-color:#17ff0f;border-width: 5px;border-style: solid;}
-  textarea{width: calc(50vw - 30px); height: calc(100vh - 30px);resize:none;border-color: #ff0f0f;border-width: 5px;border-style: solid;}div:not(.htmlhtml){border-color:#ff960f;border-width: 5px;border-style: solid;}
-  </style>
+	<script type="text/javascript" src="com.js"></script>
+	<link rel="stylesheet" href="st.css">
 </head>
 <body>
-  <script>
-  (function(){
-    $(document).ready(function(){
-      $("textarea").keyup(function(){
-        var values=$("textarea").val();
-        var converter = new showdown.Converter();
-        var valuesss=converter.makeHtml(values);
-        $("div.htmlhtml").html(valuesss);
-        $("code.htmltext").text(valuesss);
-      });
-    });
-  })();
-  </script>
   <table><tr><td><textarea noresize="noresize"></textarea></td><td><div class="htmlhtml"></div><div><code class="htmltext"></code></div></td></tr></table>
 </body>
 </html>
