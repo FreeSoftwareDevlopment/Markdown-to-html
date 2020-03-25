@@ -5,7 +5,7 @@ function compi(){
         var values=$("textarea").val();
         var converter = new showdown.Converter();
         var valuesss=converter.makeHtml(values);
-	var repht=valuesss..split("<a href=\"").join("<a target="_blank" href=\"");
+	var repht=valuesss..split("<a href=\"").join("<a target=<\"_blank\" href=\"");
         $("div.htmlhtml").html(repht);
         $("code.htmltext").text(valuesss);
       }
