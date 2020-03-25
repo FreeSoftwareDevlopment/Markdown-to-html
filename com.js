@@ -13,7 +13,7 @@ function compi(){
 	 
     $.get("demo.md", function(data, status){
 	    if(keyss){
-	    $("textarea").val(data);}
+	    $("textarea").val(data);compi();}
     }, "text");
     $(document).ready(function(){
       $("textarea").keyup(compi);
