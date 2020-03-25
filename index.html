@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SharkMarkdown Compiler</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+  <style>
+  div{width: 50px; height: 50%px; overflow-y: scroll;}
+  textarea{width: 50px; height: 100%px;}
+  </style>
+</head>
+<body>
+  <script>
+  (function(){
+    $(document).ready(function(){
+      $("textarea").keyup(function(){
+        var values=$("textarea").val();
+        var converter = new showdown.Converter();
+        var valuesss=converter.makeHtml(values);
+        $("div#htmlhtml").html(valuesss);
+        $("code#htmltext").text(valuesss);
+      });
+    });
+  })();
+  </script>
+	<textarea></textarea>
+  <div id="htmlhtml"></div>
+  <div><code id="htmltext"></code></div>
+</body>
+</html>
